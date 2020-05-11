@@ -26,7 +26,7 @@ Why am I running sshd rather than just running Jupyter?  I found that despite my
 5. Pull nvidia/cuda:9.2-cudnn7-devel-ubuntu16.04 image to your local docker repo.
 
 ### Before you build...
-1. Change the number of workers for making OpenCV4.  Yes going from 10 to 30 makes a big difference in build times.  My 1950x at 30 is about 40 minutes faster than my 8700k.  Search for 'RUN make -j30'
+1. Change the number of workers for making OpenCV4.  Yes going from 10 to 30 makes a big difference in build times.  My AMD Ryzen 1950x at 30 is about 40 minutes faster than my Intel 8700k.  Search for 'RUN make -j30'
 2. Not everyone wants their jupyter server to be without a password.  Go to the 'FINAL SETUP' section.
 3. 'FINAL SETUP' also has the password for sshd.
 4. You may want to change the volumes being exposed.  This can be changed at the end of the Dockerfile.
